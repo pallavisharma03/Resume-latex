@@ -1,0 +1,355 @@
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1},\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Pallavi U Sharma} % Your Name
+\newcommand{\course}{B.E in Electronics and Telecommunication} % Your Course
+\newcommand{\roll}{1BM20ET067} % Your Roll No.
+\newcommand{\phone}{9019534756} % Your Phone Number
+\newcommand{\emaila}{ pallaviu.te20@bmsce.ac.in} %Email 1
+\newcommand{\emailb}{22f2000162@ds.study.iitm.ac.in
+} %Email 2
+\newcommand{\github}{USERID} %Github
+\newcommand{\website}{https://github.com/pallavisharma03} %Website
+\newcommand{\linkedin}{pallavi-sharma-375790121} %linkedin
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\parbox{2.35cm}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} & \hfill +91-\phone\\[1ex]
+  {Roll No:\roll} & \hfill \href{mailto:\emaila}{\emaila} \\
+  \course &  \hfill \href{mailto:\emailb}{\emailb}\\
+  {B.Sc. in Data Science and Programming} &  \hfill \href{https://github.com/\github}{Github} $|$ \href{\website}{Website}\\
+  {B.M.S. College of Engineering} & \hfill \href{https://www.linkedin.com/in/\linkedin/}{linkedin.com/in/\linkedin}
+\end{tabularx}
+}
+
+
+
+%-----------EDUCATION-----------------
+
+\section{Education}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+% \renewcommand{\arraystretch}{1.1} % Default value: 1
+\small{\begin{tabularx}
+{\dimexpr\textwidth-3mm\relax}{|c|C|c|c|}
+  \hline
+  \textbf{Degree/Certificate } & \textbf{Institute} & \textbf{Year}\\
+  \hline
+  B.E.in Electronics and Telecommunication & B.M.S. College of Engineering, Bengaluru & 2020-Present\\
+  \hline
+  B.Sc. in Data Science and Programming & Indian Institute of Technology, Madras (Distance Learning) & 2021-Present\\ %Optional
+  \hline
+  Class XII - Karnataka State Board & Vedanta PU College, Bangalore & 2020 \\
+  \hline
+  Class X -ICSE & Sri Kumaran Public School, Bangalore& 2018\\
+  \hline
+\end{tabularx}}
+\vspace{-2mm}
+
+% %-----------EXPERIENCE-----------------
+\section{Internship}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Centre for Electromagnetics, CSIR - National Aerospace Laboratories}{Bengaluru, India}
+      {Research Intern}{Aug 2023- Sept 2023}
+      \resumeItemListStart
+    \item {Worked on \textbf{radars and antenna} simulations concerning applications in \textbf{space and aircraft design}.}
+    \item {Simulated an antenna and a theoretical idea of creating the phenomenon of \textbf{quantum entanglement}.}
+    \item {\textbf{Designed and optimized antennas} for specific frequency bands and radiation patterns.}
+    \item {Collaborated with multidisciplinary teams to integrate radar and antenna systems into larger aerospace projects.}
+    \item {Conducted research on radar signal processing techniques for target detection and tracking.}
+    \item {Developed simulation models to explore the potential applications and limitations of quantum entanglement in practical scenarios.}
+
+    \resumeItemListEnd
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+    
+    \resumeProject
+      {Bradycardia and Atrial Fibrillation Detection} %Project Name
+      {VIIth semester Course Project} %Project Name, Location Name
+      {Dec, 2023} %Event Dates
+    {\href{https://github.com/pallavisharma03/Bradycardia-and-Atrial-Fibrillation}{Github}} %Website
+      \resumeItemListStart
+        \item {Led the \textbf{hardware implementation} for a sophisticated cardiac monitoring system focusing on bradycardia and atrial fibrillation.}
+        \item {Utilized \textbf{Arduino UNO}, \textbf{ESP8266}, \textbf{MAX30100}, and \textbf{DS18B20 sensors} for precise data collection and integration.}
+        \item {Orchestrated the selection, integration, and calibration processes, ensuring seamless operation and accurate detection of cardiac irregularities.}
+        \item {Contributed to advancing healthcare technology and improving patient outcomes through innovative hardware solutions.}
+    \resumeItemListEnd
+
+    \resumeProject
+      {TouchScript} %Project Name
+      {Image Processing Project} %Project Name, Location Name
+      {Nov, 2023} %Event Dates
+      {\href{https://github.com/pallavisharma03/TouchScript}{Github}} %Website
+      \resumeItemListStart
+        \item {Developed and deployed the ground-breaking project \textbf{TouchScript}, which aims to improve accessibility and inclusivity for people interacting with text and images. }
+
+        \item {Conceptualized, designed, and programmed the user-friendly GUI for text-to-Braille conversion and tactile image exploration using \textbf{Tkinter} for deployment and \textbf{PIL (Python Imaging Library)} for image processing.}
+        
+        \item {Utilized knowledge of image processing and Unified English Braille (UEB) code to ensure precise conversion and portrayal.}
+
+    \resumeItemListEnd
+    
+    \resumeProject
+      {Brain Tumor Detection using convolutional neural networks }
+    {VI semester project} %Project Name, Location Name
+    {Apr, 2023}{\href{https://github.com/pallavisharma03/Brain-Tumor-Detection-System}{Github}}
+      \resumeItemListStart
+        \item {Led the development of 2D neural networks for brain tumor classification, emphasizing \textbf{data preprocessing} and \textbf{hyperparameter optimization}.}
+        \item {Utilized \textbf{convolutional neural networks (CNNs)} to accurately categorize gliomas, meningiomas, metastatic tumors, and non-tumor images from MRI datasets.}
+        \item {Implemented results visualization on a \textbf{Streamlit-deployed app}, ensuring \textbf{user-friendly display} and \textbf{accessibility}.}
+        \item {Focused on technical aspects such as \textbf{data preprocessing}, \textbf{hyperparameter optimization}, and \textbf{app deployment} to streamline the classification process.}
+    \resumeItemListEnd
+    
+    \resumeProject
+      {Separation of Frequencies using Variational Mode Decomposition} %Project Name
+      {Digital Signal Processing Project} %Project Name, Location Name
+      {Jan, 2023} %Event Dates
+      {\href{https://github.com/pallavisharma03/Separation-of-Frequencies-using-Variational-Mode-Decomposition-}{Github}} %Website
+      \resumeItemListStart
+
+        \item {Composite signals were generated by combining sinusoidal waves with random noise, and Python libraries were employed for implementation.}
+        \item {Through VMD, signals were decomposed into constituent modes, facilitating frequency analysis and audio playback.}
+        \item {Utilized VMD to decompose signals into constituent modes.}
+        \item {Facilitated frequency analysis and audio playback of decomposed signals.}
+        \item {This project honed skills in \textbf{signal processing, algorithm implementation, and data analysis}.}
+
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+% %-----------EXPERIENCE-----------------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Study on Quantum Radars for Space Application}
+      {Dr. Balamati Choudhury}
+      {Centre for Electromagnetics, CSIR - National Aerospace Laboratories}
+      {Proceedings of WAMS 2024, IEEE}
+      \resumeItemListStart
+    \item {This paper succinctly introduces Quantum radars, comparing them to classical radars and presenting a basic simulation of a quantum antenna capable of generating quantum entanglement. }
+    \item {It delves into diverse applications across various fields of study, offering insights into the potential of quantum radar technology.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Temperature and soil parameter monitoring system using ESP32}
+      {Prof. Shailaja K P}
+      {BMSCE}
+      {Proceedings of IACESD 2023, Springer}
+      \resumeItemListStart
+    \item {Engineered real-time soil monitoring system for precise tracking of temperature and humidity.}
+    \item {Designed intuitive web interface for data visualization, enhancing agricultural decision-making with trend analysis and customizable alerts.}
+
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+\section{Skills}
+ \resumeHeadingSkillStart
+\begin{itemize}
+    \item[$\bullet$] Strong organizational and time-management skills.
+    \item[$\bullet$] Exceptional communication and interpersonal skills.
+    \item[$\bullet$] Ability to work independently and as part of a team.
+    \item[$\bullet$] Detail-oriented and able to handle multiple tasks simultaneously.
+    \item[$\bullet$] Meticulous attention to detail, creative thinking, and critical analysis.
+    \item[$\bullet$] Unwavering patience, resilience, and ethical standards.
+\end{itemize}
+
+ \resumeHeadingSkillEnd
+
+
+\section{Key courses taken}
+\resumeHeadingSkillStart
+ \resumeSubItem{Electronics} % Category
+    {Digital Electronics, Analog Electronics, Sensors and Measurements, VLSI Design, Linear Integrated Circuits, Electromagnetics, Wireless Communication, Antennas, Analog Communication, Digital Communication, IoT and sensors, Microcontrollers, FPGA, Embedded Hardware and Operating systems, HDL. }
+ \resumeSubItem{Platforms} % Category
+    {Matlab, Multisim, Arduino IDE, ComSol, CST.} % Skills
+\resumeSubItem{Computer Science}
+ {Python, C++, DSA, Computer Networks, Machine Learning, Operating Systems, Deep Learning, Data Science, HTML, CSS, JavaScript, Bootstrap, jQuery.}
+ \resumeSubItem{Mathematics}
+ {Statistical Methods and Algorithms, Probability Theory, Differential Equations, Linear Algebra, Matrix Theory.}
+ \resumeHeadingSkillEnd
+
+
+\section{Positions of Responsibility}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Junior Coordinator, Organising Committee} % Position
+    {Annual Technical Fest, Phaseshift, BMSCE } %Club,Event
+    {Aug 2022 - Nov 2022} %Tenure Period
+    \resumeItemListStart
+        \item {Undertook the responsibility of supervising a team tasked with promoting a range of events. \\Held the position of overseeing the fundraising efforts for the event.}
+    %     % \item { Also responsible for the social media management and various content initiatives of the Club across platforms}
+    \resumeItemListEnd
+
+\resumePOR{Class Representative} % Position
+    {B.M.S. College of Engineering } %Club,Event
+    {Dec 2020- Dec 2021} %Tenure Period
+    \resumeItemListStart
+        \item {Managed the class test schedules and announcements, while collaborating with teachers.}
+    %     % \item { Also responsible for the social media management and various content initiatives of the Club across platforms}
+    \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{Achievements}
+\vspace{-0.2mm}
+\resumeSubHeadingListStart
+\resumePOR{Bradycardia and Atrial Fibrillation} % Award
+    {got selected for a government grant from the department \\ and was claimed as the best project of the batch} % Event
+    {BMSCE, 2024} %Event Year
+
+
+\resumeSubHeadingListEnd
+\vspace{-2mm}
+% \hspace*{-5mm}\rule{1.035\textwidth}{0.1mm}
+\section{References}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Dr. Balamati Choudhury} % Position
+    {\\Principal Scientist, Center for Electromagnetics, CSIR – National Aerospace Laboratories Bangalore, India.\\ Email - balamati@nal.res.in} %Club,Event
+
+\resumePOR{Dr. C. Gururaj} % Position
+    {\\Assitant Professor,BMSCE,Bengaluru,India.\\ Email - gururaj.tce@bmsce.ac.in} %Club,Event
+
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+%-------------------------------------------
+\end{document}
