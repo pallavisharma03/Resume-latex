@@ -124,11 +124,9 @@
 \newcommand{\course}{B.E in Electronics and Telecommunication} % Your Course
 \newcommand{\roll}{1BM20ET067} % Your Roll No.
 \newcommand{\phone}{9019534756} % Your Phone Number
-\newcommand{\emaila}{ pallaviu.te20@bmsce.ac.in} %Email 1
-\newcommand{\emailb}{22f2000162@ds.study.iitm.ac.in
-} %Email 2
-\newcommand{\github}{USERID} %Github
-\newcommand{\website}{https://github.com/pallavisharma03} %Website
+\newcommand{\emaila}{pallaviusharma95@gmail.com} %Email 1
+
+\newcommand{\github}{pallavisharma03} %Github
 \newcommand{\linkedin}{pallavi-sharma-375790121} %linkedin
 
 
@@ -142,14 +140,13 @@
 \parbox{2.35cm}
 \parbox{\dimexpr\linewidth-2.8cm\relax}{
 \begin{tabularx}{\linewidth}{L r}
-  \textbf{\LARGE \name} & \hfill +91-\phone\\[1ex]
-  {Roll No:\roll} & \hfill \href{mailto:\emaila}{\emaila} \\
-  \course &  \hfill \href{mailto:\emailb}{\emailb}\\
-  {B.Sc. in Data Science and Programming} &  \hfill \href{https://github.com/\github}{Github} $|$ \href{\website}{Website}\\
-  {B.M.S. College of Engineering} & \hfill \href{https://www.linkedin.com/in/\linkedin/}{linkedin.com/in/\linkedin}
+  \textbf{\LARGE \name} & \hfill \\
+  {+91 90195 34756} \\
+  {\href{mailto:\emaila}{\emaila}  & \hfill }\\
+  {\href{https://github.com/pallavisharma03} {Github: github.com/in/pallavisharma03}   &  \hfill} \\
+  {\href{https://www.linkedin.com/in/pallavi-sharma-375790121/}{Linkedin: linkedin.com/in/pallavi-sharma-375790121}   &  \hfill} \\
 \end{tabularx}
 }
-
 
 
 %-----------EDUCATION-----------------
@@ -162,9 +159,7 @@
   \hline
   \textbf{Degree/Certificate } & \textbf{Institute} & \textbf{Year}\\
   \hline
-  B.E.in Electronics and Telecommunication & B.M.S. College of Engineering, Bengaluru & 2020-Present\\
-  \hline
-  B.Sc. in Data Science and Programming & Indian Institute of Technology, Madras (Distance Learning) & 2021-Present\\ %Optional
+  B.E.in Electronics and Telecommunication & B.M.S. College of Engineering, Bengaluru & 2020-2024\\
   \hline
   Class XII - Karnataka State Board & Vedanta PU College, Bangalore & 2020 \\
   \hline
@@ -174,21 +169,33 @@
 \vspace{-2mm}
 
 % %-----------EXPERIENCE-----------------
-\section{Internship}
+\section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {CEmbedded Systems Engineer, Bempu Health}{Bengaluru, India}
+      {Embedded Intern}{March 2024- Sept 2024}
+      \resumeItemListStart
+    \item {Worked on the NRF52832 Bluetooth module for biomedical devices.}
+    \item {Designed schematics and PCBs using KiCAD, tested PCBs and devices to ensure workability.}
+    \item {Integrated the power management IC NPM1300 for existing devices inorder to ensure efficient power management and battery life.}
+    \item {Redesigned the production procedure after testing failed devices.}
+    \item {Investigated device failures and implemented procedures to prevent future issues.}
+    \item {Worked on OTA updation in the NRF52832.}
+
+    \resumeItemListEnd
+    
+     \resumeSubheading
       {Centre for Electromagnetics, CSIR - National Aerospace Laboratories}{Bengaluru, India}
       {Research Intern}{Aug 2023- Sept 2023}
       \resumeItemListStart
-    \item {Worked on \textbf{radars and antenna} simulations concerning applications in \textbf{space and aircraft design}.}
-    \item {Simulated an antenna and a theoretical idea of creating the phenomenon of \textbf{quantum entanglement}.}
-    \item {\textbf{Designed and optimized antennas} for specific frequency bands and radiation patterns.}
+    \item {Worked on radars and antenna simulations concerning applications in space and aircraft design.}
+    \item {Simulated an antenna and a theoretical idea of creating the phenomenon of quantum entanglement.}
+    \item {Designed and optimized antennas for specific frequency bands and radiation patterns.}
     \item {Collaborated with multidisciplinary teams to integrate radar and antenna systems into larger aerospace projects.}
     \item {Conducted research on radar signal processing techniques for target detection and tracking.}
     \item {Developed simulation models to explore the potential applications and limitations of quantum entanglement in practical scenarios.}
 
     \resumeItemListEnd
-    
       
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
@@ -198,13 +205,13 @@
 \resumeSubHeadingListStart
     
     \resumeProject
-      {Bradycardia and Atrial Fibrillation Detection} %Project Name
-      {VIIth semester Course Project} %Project Name, Location Name
-      {Dec, 2023} %Event Dates
+      {Wearable Heart Monitoring System using Fuzzy Logic} %Project Name
+      {Bachelor's Project} %Project Name, Location Name
+      {May, 2024} %Event Dates
     {\href{https://github.com/pallavisharma03/Bradycardia-and-Atrial-Fibrillation}{Github}} %Website
       \resumeItemListStart
         \item {Led the \textbf{hardware implementation} for a sophisticated cardiac monitoring system focusing on bradycardia and atrial fibrillation.}
-        \item {Utilized \textbf{Arduino UNO}, \textbf{ESP8266}, \textbf{MAX30100}, and \textbf{DS18B20 sensors} for precise data collection and integration.}
+        \item {Utilized \textbf{Arduino UNO}, \textbf{ESP8266}, \textbf{MAX30102}, and \textbf{DS18B20 sensors} for precise data collection and integration.}
         \item {Orchestrated the selection, integration, and calibration processes, ensuring seamless operation and accurate detection of cardiac irregularities.}
         \item {Contributed to advancing healthcare technology and improving patient outcomes through innovative hardware solutions.}
     \resumeItemListEnd
@@ -224,7 +231,7 @@
     \resumeItemListEnd
     
     \resumeProject
-      {Brain Tumor Detection using convolutional neural networks }
+      {Brain Tumor Detection using Convolutional Neural Networks }
     {VI semester project} %Project Name, Location Name
     {Apr, 2023}{\href{https://github.com/pallavisharma03/Brain-Tumor-Detection-System}{Github}}
       \resumeItemListStart
@@ -234,20 +241,6 @@
         \item {Focused on technical aspects such as \textbf{data preprocessing}, \textbf{hyperparameter optimization}, and \textbf{app deployment} to streamline the classification process.}
     \resumeItemListEnd
     
-    \resumeProject
-      {Separation of Frequencies using Variational Mode Decomposition} %Project Name
-      {Digital Signal Processing Project} %Project Name, Location Name
-      {Jan, 2023} %Event Dates
-      {\href{https://github.com/pallavisharma03/Separation-of-Frequencies-using-Variational-Mode-Decomposition-}{Github}} %Website
-      \resumeItemListStart
-
-        \item {Composite signals were generated by combining sinusoidal waves with random noise, and Python libraries were employed for implementation.}
-        \item {Through VMD, signals were decomposed into constituent modes, facilitating frequency analysis and audio playback.}
-        \item {Utilized VMD to decompose signals into constituent modes.}
-        \item {Facilitated frequency analysis and audio playback of decomposed signals.}
-        \item {This project honed skills in \textbf{signal processing, algorithm implementation, and data analysis}.}
-
-    \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
@@ -278,22 +271,7 @@
   \resumeSubHeadingListEnd
 \vspace{-5.5mm}
 
-
 \section{Skills}
- \resumeHeadingSkillStart
-\begin{itemize}
-    \item[$\bullet$] Strong organizational and time-management skills.
-    \item[$\bullet$] Exceptional communication and interpersonal skills.
-    \item[$\bullet$] Ability to work independently and as part of a team.
-    \item[$\bullet$] Detail-oriented and able to handle multiple tasks simultaneously.
-    \item[$\bullet$] Meticulous attention to detail, creative thinking, and critical analysis.
-    \item[$\bullet$] Unwavering patience, resilience, and ethical standards.
-\end{itemize}
-
- \resumeHeadingSkillEnd
-
-
-\section{Key courses taken}
 \resumeHeadingSkillStart
  \resumeSubItem{Electronics} % Category
     {Digital Electronics, Analog Electronics, Sensors and Measurements, VLSI Design, Linear Integrated Circuits, Electromagnetics, Wireless Communication, Antennas, Analog Communication, Digital Communication, IoT and sensors, Microcontrollers, FPGA, Embedded Hardware and Operating systems, HDL. }
@@ -331,25 +309,29 @@
 \section{Achievements}
 \vspace{-0.2mm}
 \resumeSubHeadingListStart
-\resumePOR{Bradycardia and Atrial Fibrillation} % Award
-    {got selected for a government grant from the department \\ and was claimed as the best project of the batch} % Event
-    {BMSCE, 2024} %Event Year
+\resumePOR{Wearable Heart Monitoring Device for Detecting Bradycardia and Atrial Fibrillation}  
+{Selected for patent funding by \\the institution, with the patent filing already completed.}  
+ 
 
+\resumePOR{Wearable Heart Monitoring Device for Detecting Bradycardia and Atrial Fibrillation}  
+{Selected as the best project of \\ the department and one of the best projects of the institution in the batch of 2024.}  
+
+\resumePOR{KSCST Grant}  
+{Received a grant of ₹7,000 from the Karnataka State Council for Science and Technology (KSCST) for \\ research on the Wearable Heart Monitoring Device for Detecting Bradycardia and Atrial Fibrillation.}  
+
+\resumePOR{State-Level Project Exhibition}  
+{Recognized as the best project of the year at a state-level project exhibition organized \\ by the Karnataka State Council for Science and Technology for the Wearable Heart Monitoring Device for Detecting \\ Bradycardia and Atrial Fibrillation.}  
+
+\resumePOR{Best Paper Award}  
+{The study on Quantum Radars for Space Applications won the Best Paper Award in the bachelor's \\ level category at WAMS 2024, recognized by dignitaries from NASA Jet Propulsion Laboratory, with a \\ cash prize of ₹15,000.}  
 
 \resumeSubHeadingListEnd
 \vspace{-2mm}
+
 % \hspace*{-5mm}\rule{1.035\textwidth}{0.1mm}
-\section{References}
-\vspace{-0.4mm}
-\resumeSubHeadingListStart
-\resumePOR{Dr. Balamati Choudhury} % Position
-    {\\Principal Scientist, Center for Electromagnetics, CSIR – National Aerospace Laboratories Bangalore, India.\\ Email - balamati@nal.res.in} %Club,Event
 
-\resumePOR{Dr. C. Gururaj} % Position
-    {\\Assitant Professor,BMSCE,Bengaluru,India.\\ Email - gururaj.tce@bmsce.ac.in} %Club,Event
 
-\resumeSubHeadingListEnd
-\vspace{-4mm}
+
 
 %-------------------------------------------
 \end{document}
